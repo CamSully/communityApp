@@ -20,6 +20,7 @@ var DayStyle = {
     flex: 1,
     height: 75,
     borderWidth: 3,
+    borderRadius: 1,
     margin: -1,
     alignItems: "center",       // Horizontal
     justifyContent: "center",   // Vertical

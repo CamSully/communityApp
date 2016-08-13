@@ -16,6 +16,7 @@ class EventDetails extends Component {
 
   constructor(props) {
     super(props);
+    console.log(props);
   }
 
   _navigate(destination, thisComponentsName) {
@@ -49,13 +50,14 @@ class EventDetails extends Component {
 
           <View style = {styles.details_banner_title}>
             <Text style = {styles.details_banner_title_text}>
-              Important Event
+              {this.props.eventTitle}
             </Text>
           </View>
 
           <View style = {styles.details_banner_info}>
             <EventAttribute eventAttribute = {this.props.eventAttribute}/>
             <EventAttribute eventAttribute = {this.props.eventAttribute2}/>
+            <EventAttribute eventAttribute = {this.props.eventAttribute3}/>
           </View>
 
         </View>

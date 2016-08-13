@@ -1,4 +1,5 @@
 var FilterStyle = {
+
   calButtonContainerStyle: {
     backgroundColor: "black",
     borderWidth: 3,
@@ -24,7 +25,17 @@ var FilterStyle = {
     padding: 5,
   },
 
+  cal_filter_items_text: {
+    fontSize: 22,
+    color: "white",
+    lineHeight: 35,
+  },
 
+  cal_filter_popup: {
+    borderRadius: 3,
+    backgroundColor: "black",
+    alignItems: "center"
+  }
 
 };
 

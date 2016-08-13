@@ -29,12 +29,14 @@ class Filter extends Component {
     var showingTopOffset = 0;
     var showingLeftOffset = 0;
     if(this.state.showingMenu){
-      showingTopOffset = 20
-      showingLeftOffset = 15
-      inner = <View style={{backgroundColor: "white"}}><Text>Filter Menu Options Here</Text>
+      showingTopOffset = 100
+      showingLeftOffset = -25
+      inner = <View style={styles.cal_filter_popup}><Text style = {styles.cal_filter_items_text}> Music {"\n"} Sports {"\n"} Civil</Text>
+
         <Button style={styles.calButtonTextStyleHide} containerStyle={styles.calButtonContainerStyleHide}
           onPress={() => {this.hideMenu()}}>
           Hide </Button>
+
       </View>
     }
     else{

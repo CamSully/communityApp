@@ -22,10 +22,14 @@ class Day extends Component {
     super(props);
   }
 
-  _navigate(destination, thisComponentsName) {
+  _navigate(destination, thisComponentsName, title, attribute, attribute2, attribute3) {
     this.props.navigator.push({
       name: destination,
       passProps: {
+        eventTitle: title,
+        eventAttribute: attribute,
+        eventAttribute2: attribute2,
+        eventAttribute3: attribute3,
         name: thisComponentsName
       }
     });
@@ -59,11 +63,11 @@ class Day extends Component {
 
               <View style = {styles.cal_day_event}>
                 
-                <Button onPress={() => {this._navigate('EventDetails', 'me')}}>
+                <Button onPress={() => {this._navigate('EventDetails', 'me', this.props.event1Title, this.props.event1Detail1, this.props.event1Detail2, this.props.event1Detail3)}}>
                 <Event event = {this.props.event}/>
                 </Button>
 
-                <Button onPress={() => {this._navigate('EventDetails', 'me')}}>
+                <Button onPress={() => {this._navigate('EventDetails', 'me', this.props.event2Title, this.props.event2Detail1, this.props.event2Detail2, this.props.event2Detail3)}}>
                 <Event event = {this.props.event2}/>
                 </Button>
 

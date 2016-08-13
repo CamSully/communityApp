@@ -36,7 +36,16 @@ class CalendarView extends Component{
            dayOfWeek = "Friday"
            dayNum = {1}
            event = "7 pm: OTHS Football Game"
+           event1Title = "OTHS Football Game"
+           event1Detail1 = "Location: OTHS Victory Field"
+           event1Detail2 = "Time: 7pm - 9pm"
+           event1Detail3 = "Notes: Cheer on the Coyotes as they take on Orono."
+
            event2 = "10 pm: Waterfront Fireworks"
+           event2Title = "Waterfront Fireworks"
+           event2Detail1 = "Location: Riverfront Park"
+           event2Detail2 = "Time: 10pm - 10:30pm"
+           event2Detail3 = "Notes: Dance in the streets and watch a sweet firework show!"
           />
 
     		  <Day
